@@ -1,0 +1,272 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  
+  "children": [
+    {
+      "elmType": "span",
+      "style": {
+        "padding": "0 10px",
+        "display": "=if(@currentField, 'none','block')",
+        "color": "red"
+      },
+      "attributes": {
+        "iconName": "Error"
+      }
+    },
+    {
+      "elmType": "a",
+      "style": {
+        "padding": "0 10px",
+        "display": "=if(@currentField, 'block', 'none')",
+        "text-decoration": "none",
+        "color": "#ffffff"
+      },
+      "attributes": {
+        "href": "@currentField",
+        "iconName": "Link"
+      }
+    }
+  ],
+  "style":{
+   "color": "#fff",  
+   "padding-left": "14px",  
+    "background-color":{
+      "operator": ":",
+      "operands": [
+        {
+          "operator": "==",
+          "operands": [
+            {
+              "operator": "toLowerCase",
+              "operands": [
+                "[$DecemberSts]"
+              ]
+            },
+            {
+              "operator": "toLowerCase",
+              "operands": [
+                "Red"
+              ]
+            }
+          ]
+        },
+        "#ff0000",
+        {
+          "operator": ":",
+          "operands": [
+            {
+              "operator": "==",
+              "operands": [
+                {
+                  "operator": "toLowerCase",
+                  "operands": [
+                    "[$DecemberSts]"
+                  ]
+                },
+                {
+                  "operator": "toLowerCase",
+                  "operands": [
+                    "Amber"
+                  ]
+                }
+              ]
+            },
+            "#FFD700",
+            {
+              "operator": ":",
+              "operands": [
+                {
+                  "operator": "==",
+                  "operands": [
+                    {
+                      "operator": "toLowerCase",
+                      "operands": [
+                        "[$DecemberSts]"
+                      ]
+                    },
+                    {
+                      "operator": "toLowerCase",
+                      "operands": [
+                        "Green"
+                      ]
+                    }
+                  ]
+                },
+                "#008000",
+                
+                {
+                  "operator": ":",
+                  "operands": [
+                    {
+                      "operator": "==",
+                      "operands": [
+                        {
+                          "operator": "toLowerCase",
+                          "operands": [
+                            "[$DecemberSts]"
+                          ]
+                        },
+                        {
+                          "operator": "toLowerCase",
+                          "operands": [
+                            "Not"
+                          ]
+                        }
+                      ]
+                    },
+                    "#000000",
+                    {
+                     "operator": ":",
+                     "operands": [
+                       {
+                         "operator": "==",
+                         "operands": [
+                           {
+                             "operator": "toLowerCase",
+                             "operands": [
+                               "[$DecemberSts]"
+                             ]
+                           },
+                           {
+                             "operator": "toLowerCase",
+                             "operands": [
+                               "Reported"
+                             ]
+                           }
+                         ]
+                       },
+                       "#000000",
+                       {
+                         "operator": ":",
+                         "operands": [
+                           {
+                             "operator": "==",
+                             "operands": [
+                               {
+                                 "operator": "toLowerCase",
+                                 "operands": [
+                                   "[$DecemberSts]"
+                                 ]
+                               },
+                               {
+                                 "operator": "toLowerCase",
+                                 "operands": [
+                                   "On Hold"
+                                 ]
+                               }
+                             ]
+                           },
+                           "#B0E0E6",
+                           {
+                             "operator": ":",
+                             "operands": [
+                               {
+                                 "operator": "==",
+                                 "operands": [
+                                   {
+                                     "operator": "toLowerCase",
+                                     "operands": [
+                                       "[$DecemberSts]"
+                                     ]
+                                   },
+                                   {
+                                     "operator": "toLowerCase",
+                                     "operands": [
+                                       "Cancelled"
+                                     ]
+                                   }
+                                 ]
+                               },
+                               "#FFB6C1",
+                               {
+                                 "operator": ":",
+                                 "operands": [
+                                   {
+                                     "operator": "==",
+                                     "operands": [
+                                       {
+                                         "operator": "toLowerCase",
+                                         "operands": [
+                                           "[$DecemberSts]"
+                                         ]
+                                       },
+                                       {
+                                         "operator": "toLowerCase",
+                                         "operands": [
+                                           "Completed"
+                                         ]
+                                       }
+                                     ]
+                                   },
+                                   "#0000FF",
+                                   {
+                                     "operator": ":",
+                                     "operands": [
+                                       {
+                                         "operator": "==",
+                                         "operands": [
+                                           {
+                                             "operator": "toLowerCase",
+                                             "operands": [
+                                               "[$DecemberSts]"
+                                             ]
+                                           },
+                                           {
+                                             "operator": "toLowerCase",
+                                             "operands": [
+                                               "Not Started"
+                                             ]
+                                           }
+                                         ]
+                                       },
+                                       "#FFE4B5",
+                                       {
+                                         "operator": ":",
+                                         "operands": [
+                                           {
+                                             "operator": "==",
+                                             "operands": [
+                                               {
+                                                 "operator": "toLowerCase",
+                                                 "operands": [
+                                                   "[$DecemberSts]"
+                                                 ]
+                                               },
+                                               {
+                                                 "operator": "toLowerCase",
+                                                 "operands": [
+                                                   "Pending"
+                                                 ]
+                                               }
+                                             ]
+                                           },
+                                           "#C0C0C0",""
+                                          
+                                         ]
+                                       }
+                                      
+                                     ]
+                                   }
+                                  
+                                 ]
+                               }
+                              
+                             ]
+                           }
+                          
+                         ]
+                       }
+                      
+                     ]
+                   }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+   }
+   }
